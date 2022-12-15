@@ -26,3 +26,9 @@ footer a{
 footer a:hover{
   color:rgb(212, 207, 207);
 }
+
+.namePage a{
+  text-decoration: none;
+
+  color: whitesmoke;
+}

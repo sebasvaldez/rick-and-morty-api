@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import ImgModal from "./ImgModal";
 
+
 export const Character = ({ character }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
 
   return (
     <>
