@@ -1,17 +1,13 @@
-import { useState } from "react";
-
 const FindPage = ({ findPage, setFindPage, onFindPage }) => {
   const onInputChange = ({ target }) => {
     setFindPage(target.value);
   };
 
-  console.log(typeof findPage);
-
   return (
-    <div>
+    <div className=" my-3 d-flex justify-content-center">
       <input
         type="number"
-        placeholder="Find page number"
+        placeholder="Page"
         className="mx-2"
         value={findPage}
         onChange={onInputChange}

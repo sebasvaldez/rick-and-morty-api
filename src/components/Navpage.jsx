@@ -2,9 +2,9 @@
 
 const NavPage = ({ page, setPage }) => {
   return (
-    <header className="d-flex justify-content-between align-items-center">
+    <header className="d-flex justify-content-evenly ">
       <button
-        className="btn btn-success btn-sm   "
+        className="btn btn-success btn-md   "
         onClick={
           page > 1
             ? () => {
@@ -18,8 +18,8 @@ const NavPage = ({ page, setPage }) => {
       
           
       <button
-        className="btn btn-primary btn-sm "
-        onClick={() => setPage(page + 1)}
+        className="btn btn-primary btn-md "
+        onClick={page<42 ?() =>  setPage(page + 1): null}
       >
         Next page: {page + 1}
       </button>
